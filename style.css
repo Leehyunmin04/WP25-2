@@ -9,18 +9,17 @@ body {
 }
 
 img {
-  position: fixed; /* 화면 전체에 고정 */
+  position: fixed;
   width: 100%;
   height: 100%;
   background-image: url('your-image.jpg');
-  background-size: cover; /* 화면에 맞게 확대/축소 */
-  background-position: center; /* 중앙 기준 */
-  background-repeat: no-repeat; /* 반복 금지 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   filter: blur(10px) grayscale(100%) opacity(0.3);
   z-index: -1;
 }
 
-/* 배경 블러 + 네온 포인트 */
 .bg {
   position: fixed;
   width: 100%;
@@ -35,7 +34,6 @@ img {
   z-index: -1;
 }
 
-/* 헤더 */
 header {
   text-align: center;
   padding: 60px 20px 30px;
@@ -54,7 +52,6 @@ header p {
   font-size: 1.1em;
 }
 
-/* 메뉴 전체 영역 */
 .menu-container {
   width: 85%;
   margin: 40px auto;
@@ -66,7 +63,6 @@ header p {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* 테이블 기본 스타일 */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -81,7 +77,6 @@ td {
   vertical-align: top;
 }
 
-/* 헤더 */
 th {
   background-color: rgba(0, 70, 160, 0.5);
   color: #cce6ff;
@@ -95,22 +90,6 @@ th {
   color: #a6d4ff;
 }
 
-/* 요일별 배경 */
-/* .monday {
-  background: rgb(0, 91, 170, 0.3);
-}
-.tuesday {
-  background: rgb(0, 111, 190, 0.3);
-}
-.wednesday {
-  background: rgb(0, 120, 200, 0.3);
-}
-.thursday {
-  background: rgb(0, 130, 210, 0.3);
-}
-.friday {
-  background: rgb(0, 142, 230, 0.3);
-} */
 .monday {
   background: rgba(0, 142, 230, 0.4);
 }
@@ -127,7 +106,6 @@ th {
   background: rgba(0, 142, 230, 0.03);
 }
 
-/* ===== 가로 구분선 (요일, 조식, 중식 사이) ===== */
 tbody tr td:not(:first-child) {
   position: relative;
 }
@@ -147,7 +125,6 @@ tbody tr td:not(:first-child)::before {
   );
 }
 
-/* 음식 리스트 */
 ul {
   list-style: none;
   padding: 0;
@@ -168,17 +145,15 @@ ul {
   color: #b7d9ff;
   font-family: 'Do Hyeon', sans-serif;
   text-align: center !important;
-  vertical-align: middle !important; /* 세로 중앙 */
+  vertical-align: middle !important;
 }
 
-/* hover 시 네온 강조 */
 .menu-item:hover {
   background: rgba(0, 180, 255, 0.25);
   box-shadow: 0 0 12px rgba(0, 200, 255, 0.5);
   transform: scale(1.06);
 }
 
-/* 좋아하는 메뉴 */
 .favorite {
   font-weight: bold;
   color: #00e0ff;
@@ -192,7 +167,6 @@ ul {
   transform: scale(1.06);
 }
 
-/* 푸터 */
 footer {
   text-align: center;
   padding: 25px;
@@ -203,7 +177,6 @@ footer {
   box-shadow: 0 -3px 15px rgba(0, 100, 255, 0.1);
 }
 
-/* 애니메이션 */
 @keyframes fadeIn {
   from {
     opacity: 0;
