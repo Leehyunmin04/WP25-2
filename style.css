@@ -8,6 +8,18 @@ body {
   overflow-x: hidden;
 }
 
+img {
+  position: fixed; /* 화면 전체에 고정 */
+  width: 100%;
+  height: 100%;
+  background-image: url('your-image.jpg');
+  background-size: cover; /* 화면에 맞게 확대/축소 */
+  background-position: center; /* 중앙 기준 */
+  background-repeat: no-repeat; /* 반복 금지 */
+  filter: blur(10px) grayscale(100%) opacity(0.3);
+  z-index: -1;
+}
+
 /* 배경 블러 + 네온 포인트 */
 .bg {
   position: fixed;
@@ -100,19 +112,19 @@ th {
   background: rgb(0, 142, 230, 0.3);
 } */
 .monday {
-  background: rgba(0, 142, 230, 0.03);
+  background: rgba(0, 142, 230, 0.4);
 }
 .tuesday {
-  background: rgba(0, 142, 230, 0.1);
+  background: rgba(0, 142, 230, 0.3);
 }
 .wednesday {
   background: rgba(0, 142, 230, 0.2);
 }
 .thursday {
-  background: rgba(0, 142, 230, 0.3);
+  background: rgba(0, 142, 230, 0.1);
 }
 .friday {
-  background: rgba(0, 142, 230, 0.4);
+  background: rgba(0, 142, 230, 0.03);
 }
 
 /* ===== 가로 구분선 (요일, 조식, 중식 사이) ===== */
